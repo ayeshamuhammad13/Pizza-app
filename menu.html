@@ -1,0 +1,289 @@
+<html>
+    <head>
+
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+            <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Menu</title>
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .top{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            height: 80px;
+            align-items:center;
+            padding:0px 40px;
+        }
+        .logo{
+            font-size: 30px;
+            color:orange;
+        }
+        .logo:hover{
+            color: white;
+            cursor: pointer;
+        }
+        .nav{
+            position: relative;
+            left:-180px;
+        }
+        h1 {
+            text-align: left;
+            color: #fff;
+            margin: 50px;
+            padding: 20px 20px;
+        }
+        h1:hover {
+            color: orange;
+            cursor: pointer;
+        }
+
+
+        .menu-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: left;
+            gap: 30px;
+            padding-left: 50px;
+
+        }
+
+        .pizza-card {
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+            border: 1px solid orange;
+        }
+
+        .pizza-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .pizza-details {
+            padding: 20px;
+        }
+
+        .pizza-title {
+            font-size: 1.5rem;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .pizza-description {
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        .pizza-price {
+            font-weight: bold;
+            color: #e44d26;
+        }
+
+        /***************form***************/
+        .container {
+          background-color: #fff;
+          padding: 80px;
+          border-radius: 8px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          margin-top: 50px;
+          margin-bottom: 20px;
+          width: 50%;
+          border: 1px solid orange;
+
+        }
+        h2 {
+           text-align : center;
+           font-size: 30px;
+           margin: 20px;
+           color: orange;
+        }
+        form {
+          display: flex;
+          flex-direction: column;
+        }
+
+        label {
+            font-size: 16px;
+            font-weight: bold;
+            color: black;
+            margin-top: 10px;
+          margin-bottom: 5px;
+        }
+
+        input,
+        textarea {
+              display: flex;
+          flex-wrap: wrap;
+          padding: 8px;
+          margin-bottom: 16px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+        }
+
+        select {
+          width: 100%;
+          padding: 8px;
+          margin-bottom: 16px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          box-sizing: border-box;
+        }
+
+        button {
+          padding: 10px;
+          background-color: orange;
+          color: black;
+          font-weight: bold;
+          font-size: 15px;
+          letter-spacing: 2px;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+        }
+
+        button:hover {
+          background-color: black;
+          color: white;
+        }
+
+        #food1,#food2{
+            background-size:cover;
+            width: 100px;
+            height: 100px;
+            border-radius: 100px;
+            margin:0px 20px;
+        }
+        #food1{
+            background-image: url('1.jpeg');
+        }
+        #food2{
+            background-image: url('2.jpg');
+
+        </style>
+    </head>
+    <body>
+ <div class="top">
+            <div class="logo">Ayesha</div>
+            <div class="nav">
+                <a href="index.html">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="#">About</a>
+                <a href="#">Location</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="search">
+                <i class="fa-solid fa-search"></i>
+                <i class="fa-solid fa-bars"> </i>
+                  
+            </div>
+        </div>
+
+<h1>Pizza Menu</h1>
+
+<div class="menu-container">
+    <!-- Pizza 1 -->
+    <div class="pizza-card">
+        <img src="1.jpeg" alt="Pizza 1" class="pizza-image">
+        <div class="pizza-details">
+            <div class="pizza-title">Kabab Pizza</div>
+            <div class="pizza-description">Savor the flavor of our Kabab Pizza .</div>
+            <div class="pizza-price">$120.99</div>
+        </div>
+    </div>
+
+    <!-- Pizza 2 -->
+    <div class="pizza-card">
+        <img src="food2.jpg" alt="Pizza 2" class="pizza-image">
+        <div class="pizza-details">
+            <div class="pizza-title">Stuffed Crust Pizza</div>
+            <div class="pizza-description">Delicious pizza slices with melted cheese.</div>
+            <div class="pizza-price">$140.99</div>
+        </div>
+    </div>
+
+<div class="menu-container">
+<div class="pizza-card">
+        <img src="hot p.jpg" alt="Pizza 1" class="pizza-image">
+        <div class="pizza-details">
+            <div class="pizza-title">Wood Fired Pizza With Flames</div>
+            <div class="pizza-description">Classic pizza with tomato, mozzarella, and basil.</div>
+            <div class="pizza-price">$130.99</div>
+        </div>
+    </div>
+
+    <!-- Pizza 2 -->
+    <div class="pizza-card">
+        <img src="cheese.jpg" alt="Pizza 2" class="pizza-image">
+        <div class="pizza-details">
+            <div class="pizza-title">Four Cheese Delight</div>
+            <div class="pizza-description">Delicious pizza slices with melted cheese.</div>
+            <div class="pizza-price">$140.99</div>
+        </div>
+    </div>
+
+    <!-- Add more pizzas as needed -->
+
+
+<div class="container">
+    <form action="process_booking.php" method="post">
+      <h2>Booking Form</h2>
+
+    
+            <label for="user">User </label>
+      <input type="text" id="user" user="user" required>
+
+       <label for="phone">Phone Number </label>
+      <input type="text" id="phone" phone="phone" required>
+
+       <label for="pizza">Size of Pizza</label>
+    <select id="pizza" name="pizza">
+      <option value="small">Small</option>
+      <option value="medium">Medium</option>
+      <option value="Large">Large </option>
+      <!-- Add more options as needed -->
+    </select>
+
+     <label for="pname">Pizza Name</label>
+      <input type="text" id="pname" name="pname" min="1" required>
+
+      <label for="num">Number of Pizza</label>
+      <input type="number" id="num" name="num" min="1" required>
+
+     <label for="time">Time</label>
+      <input type="time" id="time" name="time" >
+
+ <label for="comments">Special Requests</label>
+      <textarea id="comments" name="comments" rows="4"></textarea>
+
+      <button type="submit">Submit Booking</button>
+    </form>
+  </div>
+
+
+     <div class="bottom">
+            <div class="menu">
+                <div id="food1"></div>
+                <div id="food2"></div>
+                <div id="food1"></div>
+                 <div id="food2"></div>
+              
+            </div>
+        </div>
+
+  <script src="javascript.js"></script>
+
+    </body>
+    </html>
